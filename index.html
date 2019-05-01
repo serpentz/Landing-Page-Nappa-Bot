@@ -26,7 +26,7 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+          <a class="navbar-brand logo_h" href="index.html">NAPPA </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -35,15 +35,12 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav ml-auto">
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
           </div>
           <div class="right-button">
             <ul>
-
-              <li> <a href="#"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png"
-                    srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a></li>
-              <li> <a href="#"><img height="50" width="50" style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/18744318?s=460&v=4" /></a>
+              <li> <a href="https://github.com/serpentz" target="_blank" ><img height="50" width="50" style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/18744318?s=460&v=4" /></a>
               </li>
             </ul>
           </div>
@@ -69,7 +66,7 @@
               <h3>Build a better<br>business &amp; faster</h3>
             </div>
             <div class="banner_content">
-              <a href="#"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png"
+              <a href="#"><img alt="Add to Slack" height="80" width="259" src="https://platform.slack-edge.com/img/add_to_slack.png"
                   srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
             </div>
           </div>
@@ -82,18 +79,17 @@
 
   <!--================Service  Area =================-->
   <section class="service-area area-padding">
-    <div class="container">
-      <div class="row">
+    <div class="container" style="max-width: 1200vh;">
+      <div class="row" >
         <!-- Single service -->
         <div class="col-md-6 col-lg-4">
           <div class="single-service">
             <div class="service-icon">
-              <i class="ti-pencil-alt"></i>
+              <img src="img/dragon-ball.png" width="50" height="50"></i>
             </div>
             <div class="service-content">
-              <h5>Unique Design</h5>
-              <p>Third don't lights wherein was. bring to build them, seas. Thing gathering answ gaered beast third that heaven after all that living one bank limit</p>
-              <a href="#">Read More</a>
+              <h5>DBZ references</h5>
+              <p>When buzzwords are hit @nappa will make an appearance!</p>
             </div>
           </div>
         </div>
@@ -105,9 +101,9 @@
               <i class="ti-image"></i>
             </div>
             <div class="service-content">
-              <h5>Business Solution</h5>
-              <p>Third don't lights wherein was. bring to build them, seas. Thing gathering answ gaered beast third that heaven after all that living one bank limit</p>
-              <a href="#">Read More</a>
+
+              <img src="img/screenshot_2.png" />
+
             </div>
           </div>
         </div>
@@ -121,8 +117,7 @@
             </div>
             <div class="service-content">
               <h5>Customer Support</h5>
-              <p>Third don't lights wherein was. bring to build them, seas. Thing gathering answ gaered beast third that heaven after all that living one bank limit</p>
-              <a href="#">Read More</a>
+              <p><a href="#contact">Click to submit Ticket </a></p>
             </div>
           </div>
         </div>
@@ -131,69 +126,67 @@
     </div>
   </section>
   <!--================Service Area end =================-->
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h2 class="contact-title">Get in Touch</h2>
-    </div>
-    <div class="col-lg-8">
-      <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-        <div class="row">
-          <div class="col-12">
-            <div class="form-group">
+  <div class="container" id="contact">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="contact-title">Get in Touch</h2>
+      </div>
+      <div class="col-lg-8">
+        <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
                 <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" placeholder="Enter Message"></textarea>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input class="form-control" name="email" id="email" type="email" placeholder="Enter email address">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <input class="form-control" name="subject" id="subject" type="text" placeholder="Enter Subject">
+              </div>
             </div>
           </div>
-          <div class="col-sm-6">
-            <div class="form-group">
-              <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name">
-            </div>
+          <div class="form-group mt-3">
+            <button type="submit" class="button button-contactForm">Send Message</button>
           </div>
-          <div class="col-sm-6">
-            <div class="form-group">
-              <input class="form-control" name="email" id="email" type="email" placeholder="Enter email address">
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="form-group">
-              <input class="form-control" name="subject" id="subject" type="text" placeholder="Enter Subject">
-            </div>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <button type="submit" class="button button-contactForm">Send Message</button>
-        </div>
-      </form>
+        </form>
 
 
-    </div>
-
-    <div class="col-lg-4">
-      <div class="media contact-info">
-        <span class="contact-info__icon"><i class="ti-home"></i></span>
-        <div class="media-body">
-          <h3>Buttonwood, California.</h3>
-          <p>Rosemead, CA 91770</p>
-        </div>
       </div>
-      <div class="media contact-info">
-        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-        <div class="media-body">
-          <h3><a href="tel:454545654">00 (440) 9865 562</a></h3>
-          <p>Mon to Fri 9am to 6pm</p>
+
+      <div class="col-lg-4">
+        <div class="media contact-info">
+          <span class="contact-info__icon"><i class="ti-home"></i></span>
+          <div class="media-body">
+            <h3>Washington, DC.</h3>
+          </div>
         </div>
-      </div>
-      <div class="media contact-info">
-        <span class="contact-info__icon"><i class="ti-email"></i></span>
-        <div class="media-body">
-          <h3><a href="mailto:support@colorlib.com">support@colorlib.com</a></h3>
-          <p>Send us your query anytime!</p>
+        <div class="media contact-info">
+          <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+          <div class="media-body">
+            <p>Mon to Fri 9am to 6pm</p>
+          </div>
+        </div>
+        <div class="media contact-info">
+          <span class="contact-info__icon"><i class="ti-email"></i></span>
+          <div class="media-body">
+            <h3><a href="mailto:abyicherinet@gmail.com">abyicherinet@gmail.com</a></h3>
+            <p>Send us your query anytime!</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
   </div>
-</div>
 
 
   <!-- ================ start footer Area ================= -->
@@ -202,40 +195,26 @@
       <div class="row">
 
         <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-          <h4>About Us</h4>
-          <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold bearing days open</p>
-          <div class="footer-logo">
-            <img src="img/logo.png" alt="">
+
+          <div class="navbar-brand logo_h" style="font-size: xx-large;color: aliceblue;">
+            NAPPA
           </div>
         </div>
 
         <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
           <h4>Contact Info</h4>
           <div class="footer-address">
-            <p>Address :Your address goes
-              here, your demo address.</p>
             <span>Phone : +8880 44338899</span>
-            <span>Email : info@colorlib.com</span>
+            <span>Email : abyicherinet@gmail.com</span>
           </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
-          <h4>Important Link</h4>
-          <ul>
-            <li><a href="#">WHMCS-bridge</a></li>
-            <li><a href="#">Search Domain</a></li>
-            <li><a href="#">My Account</a></li>
-            <li><a href="#">Shopping Cart</a></li>
-            <li><a href="#">Our Shop</a></li>
-          </ul>
-        </div>
-
         <div class="col-lg-3 col-md-8 mb-4 mb-xl-0 single-footer-widget">
-          <h4>Newsletter</h4>
-          <p>Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days open</p>
+          <h4>Updates</h4>
+          <p>Get update information sent straight to your email!</p>
 
           <div class="form-wrap" id="mc_embed_signup">
-            <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" novalidate="true">
+            <form target="_blank" action="" method="get" novalidate="true">
               <div class="input-group">
                 <input type="email" class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '">
                 <div class="input-group-append">
@@ -256,11 +235,9 @@
       </div>
       <div class="footer-bottom row align-items-center text-center text-lg-left no-gutters">
         <p class="footer-text m-0 col-lg-8 col-md-12">
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           Copyright ©<script>
             document.write(new Date().getFullYear());
-          </script>2019 All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </script> All rights reserved | This Website was made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://github.com/serpentz" target="_blank">Absalom Cherinet</a>
         </p>
         <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
           <a href="#"><i class="ti-facebook"></i></a>
